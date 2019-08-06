@@ -78,5 +78,7 @@ float pollChannels() {
 ## Final product
 ![](final_product.png)
 
+In the picture, the device is measuring a 20 ohm resistor, so it's pretty accurate .
+
 ## Limitations and improvements
 This Ohmmeter doesn't quite measure resistance as high as I originally intended. I was hoping it would go up to at least 1M ohm. In my initial prototype, it could go that high, just not very accurately. In my final design, it won't display anything that high and the GPIO pins of the MCU start outputting ~4.5V when they're only supposed to output 3.3V max. So that's a problem. It might be because I didn't protect my circuit well enough when using the 5V power supply for my op-amps. For future iterations of this project, that would need to be fixed so that it can measure high resistance and also not slowly destory the MCU.
