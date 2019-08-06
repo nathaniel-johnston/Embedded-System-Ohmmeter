@@ -7,7 +7,7 @@ Everyone knows Ohm's law: V=IR. That's basically it.
 
 If you use a known resistance in series with an unknown resistance, it works as a voltage divider. You can then measure the voltage drop across the unknown resitor and since you know how much voltage you are supplying through the resistors, you can calculate the voltage drop across the known resistor. From this you can calculate the current, and since the resistors are in series, the current through both resistors is the same. Now you know the voltage across the resistor and the current through it and so you have the resistance.
 
-![] (voltage_dividers.png)
+![](voltage_dividers.PNG)
 
 Note in the above picture, there are diodes that have been added. This is because we don't want current to flow backwards through any of the voltage dividing channels and affect the measurement. This won't really affect the accuracy because the voltage drop across the diode can be subtracted assuming it is constant.
 
@@ -15,7 +15,7 @@ Now use this idea multiple times. Use different voltage dividers with different 
 
 For very low resistances, it's more accurate to use a constant current source. This is slightly different but still uses the same principles. Simply pass a constant current through the resistor and measure the voltage drop across it, now you know the current nd voltage, and you can calculate the resistance. Here is a diagram of the constant current source used in this design:
 
-![] (current_source.png)
+![](current_source.png)
 
 ### Software
 The software is relatively simple. There are a few main steps that the program goes through:
