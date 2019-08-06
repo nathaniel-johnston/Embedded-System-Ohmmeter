@@ -17,6 +17,8 @@ For very low resistances, it's more accurate to use a constant current source. T
 
 ![](current_source.png)
 
+Note: an op-amp buffer is used to indirectly measure the voltage across the resistor here without affecting the measurement. It is not shown in the picture but it can be seen in the full schematic.
+
 ### Software
 The software is relatively simple. There are a few main steps that the program goes through:
 1. Setup the MCU
@@ -72,3 +74,9 @@ float pollChannels() {
     return resistance;
 }
 ```
+
+## Final product
+![](final_product.png)
+
+## Limitations and improvements
+This Ohmmeter doesn't quite measure resistance as high as I originally intended. I was hoping it would go up to at least 1M ohm. In my initial prototype, it could go that high, just not very accurately. In my final design, it won't display anything that high and the GPIO pins of the MCU start outputting ~4.5V when they're only supposed to output 3.3V max. So that's a problem. It might be because I didn't protect my circuit well enough when using the 5V power supply for my op-amps. For future iterations of this project, that would need to be fixed so that it can measure high resistance and also not slowly destory the MCU.
