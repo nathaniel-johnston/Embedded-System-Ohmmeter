@@ -13,7 +13,7 @@ Note in the above picture, there are diodes that have been added. This is becaus
 
 Now use this idea multiple times. Use different voltage dividers with different known resistance values for better accuracy across a wider range. To select the best voltage divider to use, try them all until the voltage drop across the unknown resistance is within a desired range.
 
-For very low resistances, it's more accurate to use a constant current source. This is slightly different but still uses the same principles. Simply pass a constant current through the resistor and measure the voltage drop across it, now you know the current nd voltage, and you can calculate the resistance. Here is a diagram of the constant current source used in this design:
+For very low resistances, it's more accurate to use a constant current source. This is slightly different but still uses the same principles. Simply pass a constant current through the resistor and measure the voltage drop across it, now you know the current and voltage, and you can calculate the resistance. Here is a diagram of the constant current source used in this design:
 
 ![Current source](Images/current_source.png)
 
