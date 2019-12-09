@@ -76,7 +76,7 @@ float pollChannels() {
 ```
 
 ## Final product
-![](final_product.png)
+![Final product](Images/final_product.png)
 
 In the picture, the device is measuring a 20 ohm resistor, so it's pretty accurate .
 
